@@ -1,0 +1,376 @@
+/* .title{
+    background-color: rgb(138, 27, 203);
+}
+.population {
+    background-color: rgb(106, 67, 222);
+}
+
+.capital {
+    background-color: rgb(216, 137, 34);
+}
+
+.language {
+    background-color: rgb(37, 213, 213);
+}
+
+.picture {
+    background-color: rgb(22, 174, 123);
+}
+
+.prithvi-narayan-shah {
+    background-color: chartreuse;
+}
+
+.currency {
+    background-color: rgb(1, 35, 62);
+}
+
+.tourist-attractions {
+    background-color: rgb(214, 41, 199);
+}
+
+.famous-food {
+    background-color: rgb(203, 118, 14);
+}
+
+.link {
+    background-color: rgb(212, 17, 114);
+} */
+
+/* --- Header Styles (Nepali Flag Colors) --- */
+.main-header {
+    background-color: #DC143C; /* Crimson Red - Main color of Nepali Flag */
+    color: #00008B; /* Dark Blue - Changed as per user's request */
+    padding: 15px 0;
+    font-family: 'Inter', sans-serif; /* Assuming Inter font is available */
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-header .main-nav a {
+    color: hsl(240, 14%, 97%); /* Very light color - Changed as per user's request */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold; /* Make links stand out more against red */
+    transition: color 0.3s ease;
+}
+
+.main-header .main-nav a:hover {
+    color: #FFFFFF; /* White on hover for better contrast */
+}
+
+/* Responsive adjustments for header */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-header .logo {
+        margin-bottom: 10px;
+    }
+    .main-header .main-nav a {
+        margin: 0 10px;
+        display: inline-block;
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-header .main-nav a {
+        margin: 5px 8px;
+        font-size: 14px;
+    }
+}
+
+/* --- General Styles --- */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Ensure aspect ratio is maintained */
+    display: block; /* Remove extra space below images */
+    border-radius: 8px; /* Slightly rounded corners for images */
+    margin: 0 auto; /* Centered images */
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: center; /* Changed from justify to center */
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- Box Layouts --- */
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-evenly;
+    gap: 20px; /* Space between boxes */
+}
+
+.box {
+    width: 30%; /* Default width for 3 columns */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #00008B; /* Dark Blue border for boxes */
+    border-radius: 12px;
+    background-color: #FFF0F3; /* Very light crimson red background for boxes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img {
+    height: 200px; /* Fixed height for images in .box */
+    width: 100%;
+    object-fit: cover; /* Ensure images cover the area */
+    margin-bottom: 15px;
+}
+
+.box-left, .box-right {
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Changed from left to center */
+}
+
+.box-left {
+    width: 45%; /* Adjusted for a two-column layout */
+}
+
+.box-right {
+    width: 45%; /* Adjusted for a two-column layout */
+}
+
+/* Adjustments for specific sections using box-left/right */
+.world.map.box-right {
+    width: 45%; /* Keep it consistent */
+}
+
+.world.map.box-left {
+    width: 45%; /* Keep it consistent */
+}
+
+/* --- Feature Section Styles (Updated) --- */
+.features-section {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center; /* Added for overall section text alignment */
+}
+
+.features-section .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 30px;
+    max-width: 1200px; /* Ensure container has a max-width */
+    margin: 0 auto; /* Center the container */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.feature-box {
+    flex: 1 1 calc(33% - 40px); /* Make feature boxes flex equally, approx 3 columns */
+    min-width: 280px; /* Ensure a minimum width before wrapping */
+    padding: 40px;
+    background-color: #FFF7F9; /* Even paler pink/red for feature boxes */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00008B; /* Dark Blue border for feature box images */
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover img {
+    transform: scale(1.1) rotate(20deg);
+}
+
+.feature-box h3 {
+    font-family: 'Inter', sans-serif; /* Changed to Inter for consistency */
+    font-size: 1.5em;
+    color: #DC143C; /* Crimson Red for headings */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Added margin-bottom for spacing */
+}
+
+.feature-box p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    text-align: center; /* Centered text within feature box */
+    flex-grow: 1; /* Allows paragraph to take available space */
+}
+
+.feature-box a {
+    color: #00008B; /* Blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block; /* Allows padding/margin */
+    transition: color 0.3s ease;
+}
+
+.feature-box a:hover {
+    text-decoration: underline;
+    color: #DC143C;
+}
+
+
+/* --- Utility Classes --- */
+.m-10 {
+    margin: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.my-10 {
+    margin: 10px 0;
+}
+
+.mx-10 {
+    margin: 0 10px;
+}
+
+/* General section headings and paragraphs padding */
+section h1, section h2, section p {
+    padding: 0 30px; /* Corrected '3opx' to '30px' */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+footer .link a {
+    color: #ffd700; /* Gold color for footer link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .link a:hover {
+    color: #fff;
+}
+
+/* --- Hero Section (New) --- */
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/img/download.jpeg"); /* Updated path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjusted height for better visual */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+    border-radius: 8px; /* Rounded corners */
+}
+
+
+/* Responsive adjustments for general layout */
+@media (max-width: 1024px) {
+    .box {
+        width: 45%; /* Two columns on medium screens */
+    }
+    .box-left, .box-right {
+        width: 90%; /* Single column on medium screens */
+    }
+    .features-section .feature-box {
+        flex: 1 1 calc(50% - 30px); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .box-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box, .box-left, .box-right {
+        width: 90%; /* Single column on small screens */
+    }
+    .features-section .feature-box {
+        flex: 1 1 90%; /* Single column on small screens */
+    }
+    section h1, section h2, section p {
+        padding: 0 15px; /* Reduce padding on small screens */
+    }
+    .hero-section {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box, .box-left, .box-right, .features-section .feature-box {
+        width: 95%; /* Even narrower on very small screens */
+    }
+    .main-header .logo {
+        font-size: 20px;
+    }
+    .hero-section {
+        height: 150px; /* Further adjust height for very small screens */
+    }
+}

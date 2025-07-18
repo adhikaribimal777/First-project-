@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nepali Consonant Chart</title>
+  <style>
+    body {
+      font-family: "Mangal", sans-serif;
+      background: #f0f8ff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 90%; /* Adjusted for better responsiveness */
+      max-width: 800px; /* Max width for larger screens */
+      border-collapse: collapse;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden; /* Ensures rounded corners apply to content */
+    }
+    td {
+      width: calc(100% / 6); /* Maintain 6 columns */
+      text-align: center;
+      vertical-align: top;
+      border: 1px solid #eee; /* Lighter border */
+      padding: 15px 5px; /* Increased padding */
+      background: #fff;
+      transition: background 0.3s ease;
+    }
+    td:hover {
+        background-color: #f5f5f5;
+    }
+    .letter {
+      font-size: 2.5em; /* Slightly larger font for letters */
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: bold;
+    }
+    .emoji {
+      font-size: 3em; /* Larger emoji size */
+      line-height: 1; /* Remove extra space around emoji */
+      margin: 0 auto 8px auto; /* Center emoji and add margin */
+      display: block; /* Ensure it behaves like a block element for centering */
+    }
+    .caption {
+      font-size: 0.95em; /* Slightly larger caption */
+      color: #555;
+      font-weight: 500;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        table {
+            width: 95%;
+        }
+        td {
+            width: calc(100% / 4); /* 4 columns on tablets */
+        }
+    }
+
+    @media (max-width: 480px) {
+        td {
+            width: calc(100% / 3); /* 3 columns on mobile */
+            padding: 10px 3px;
+        }
+        .letter {
+            font-size: 2em;
+        }
+        .emoji {
+            font-size: 2.5em;
+        }
+        .caption {
+            font-size: 0.8em;
+        }
+    }
+  </style>
+</head>
+<body>
+  <h1>नेपाली व्यंजन (३६ अक्षर)</h1>
+  <table>
+    <tr>
+      <td><div class="letter">क</div><div class="emoji">🐢</div><div class="caption">कछुवा</div></td>
+      <td><div class="letter">ख</div><div class="emoji">🐇</div><div class="caption">खरायो</div></td>
+      <td><div class="letter">ग</div><div class="emoji">🐄</div><div class="caption">गाई</div></td>
+      <td><div class="letter">घ</div><div class="emoji">🏺</div><div class="caption">घडा</div></td>
+      <td><div class="letter">ङ</div><div class="emoji">🐟</div><div class="caption">माछा</div></td>
+      <td><div class="letter">च</div><div class="emoji">🐦</div><div class="caption">चरा</div></td>
+    </tr>
+    <tr>
+      <td><div class="letter">छ</div><div class="emoji">☔</div><div class="caption">छाता</div></td>
+      <td><div class="letter">ज</div><div class="emoji">🕸️</div><div class="caption">जाल</div></td>
+      <td><div class="letter">झ</div><div class="emoji">🎒</div><div class="caption">झोला</div></td>
+      <td><div class="letter">ञ</div><div class="emoji">🐟</div><div class="caption">माछा</div></td> <!-- Reusing fish for Ñaḍ -->
+      <td><div class="letter">ट</div><div class="emoji">🍃</div><div class="caption">टपरी</div></td> <!-- Changed emoji to leaf and caption to Tapari -->
+      <td><div class="letter">ठ</div><div class="emoji">🎯</div><div class="caption">ठेलो</div></td>
+    </tr>
+    <tr>
+      <td><div class="letter">ड</div><div class="emoji">👨‍⚕️</div><div class="caption">डाक्टर</div></td>
+      <td><div class="letter">ढ</div><div class="emoji">🚪</div><div class="caption">ढोक्डो</div></td>
+      <td><div class="letter">ण</div><div class="emoji">🥁</div><div class="caption">णडक</div></td> <!-- Drum for Naḍak -->
+      <td><div class="letter">त</div><div class="emoji">🥕</div><div class="caption">तरकारी</div></td>
+      <td><div class="letter">थ</div><div class="emoji">🍽️</div><div class="caption">थाला</div></td>
+      <td><div class="letter">द</div><div class="emoji">💊</div><div class="caption">दवाई</div></td>
+    </tr>
+    <tr>
+      <td><div class="letter">ध</div><div class="emoji">➕</div><div class="caption">धेरै</div></td> <!-- Using plus for Dherai (many) -->
+      <td><div class="letter">न</div><div class="emoji">💙</div><div class="caption">निलो</div></td>
+      <td><div class="letter">प</div><div class="emoji">💪</div><div class="caption">पाखुरा</div></td>
+      <td><div class="letter">फ</div><div class="emoji">🍎</div><div class="caption">फल</div></td>
+      <td><div class="letter">ब</div><div class="emoji">🗣️</div><div class="caption">बात</div></td>
+      <td><div class="letter">भ</div><div class="emoji">🐻</div><div class="caption">भालु</div></td>
+    </tr>
+    <tr>
+      <td><div class="letter">म</div><div class="emoji">🐟</div><div class="caption">माछा</div></td>
+      <td><div class="letter">य</div><div class="emoji">🚶‍♀️</div><div class="caption">यात्रा</div></td>
+      <td><div class="letter">र</div><div class="emoji">🌳</div><div class="caption">रूख</div></td>
+      <td><div class="letter">ल</div><div class="emoji">🔄</div><div class="caption">लट्टू</div></td> <!-- Spin for Laṭṭū -->
+      <td><div class="letter">व</div><div class="emoji">🌍</div><div class="caption">वातावरण</div></td>
+      <td><div class="letter">श</div><div class="emoji">🥤</div><div class="caption">शरबत</div></td>
+    </tr>
+    <tr>
+      <td><div class="letter">ष</div><div class="emoji">📐</div><div class="caption">षड्कोण</div></td> <!-- Angle/Ruler for Shaḍkoṇ -->
+      <td><div class="letter">स</div><div class="emoji">7️⃣</div><div class="caption">सप्त</div></td>
+      <td><div class="letter">ह</div><div class="emoji">🚜</div><div class="caption">हल</div></td>
+      <td><div class="letter">क्ष</div><div class="emoji">🥛</div><div class="caption">क्षीर</div></td>
+      <td><div class="letter">त्र</div><div class="emoji">🌿</div><div class="caption">त्रिफला</div></td> <!-- Herbs for Triphalā -->
+      <td><div class="letter">ज्ञ</div><div class="emoji">🧠</div><div class="caption">ज्ञान</div></td>
+    </tr>
+  </table>
+</body>
+</html>
+
