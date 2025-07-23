@@ -373,4 +373,12 @@ footer .link a:hover {
     .hero-section {
         height: 150px; /* Further adjust height for very small screens */
     }
+  
+.nepal-map {
+    width: 100%;
+    height: 100%;
+    length: 100%;
+    border-radius: 12px;
+    object-fit: cover; /* Ensures the image covers the container */
+    display: block;
 }
